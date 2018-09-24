@@ -51,6 +51,9 @@ $app->singleton(
 // Register do Lumen Generator
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 
+// Helper que conecta ao eloquent
+$app->withEloquent();
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware

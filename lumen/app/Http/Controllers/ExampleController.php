@@ -13,6 +13,15 @@ class ExampleController extends Controller
     {
         //
     }
+    public function teste(){
+        $json = [
+            'nome' => 'Vagner'
+        ];
+
+        #status code 201 
+        return response($json, 201)
+        ->header('Content-Type', 'application/json');
+    }
 
     //
 }
